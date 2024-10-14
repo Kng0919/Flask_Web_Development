@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Register Page</title>
+</head>
+
+<body>
+
+    <form method="get" action="/user_info">
+
+        <h2>New User Register(Get Method) </h2>
+        <p>Username: <input type="text" name="user"></p>
+        <p>Password: <input type="password" name="pwd"></p>
+
+        Gender:  <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female
+
+        <br><br>
+
+        Hobbies: 
+        <select name="hobbies" multiple>
+            <option value="basketball">Basketball</option>
+            <option value="Football">Football</option>
+            <option value="Table Tennis">Table Tennis</option>
+        </select>
+
+        <br><br>
+
+        <span>Occupation:</span>
+
+        <select name="occ">
+            <option>Student</option>
+            <option>Teacher</option>     
+            <option>Fire Fighter</option>     
+            <option>Police Officer</option>     
+            <option>Software Developer</option>     
+            <option>Human Resource</option>                
+        </select>
+        
+        <br><br>
+
+        <input type="submit"> <input type="reset">
+
+    </form>
+
+
+    <hr>
+
+    <form method="post" action="/user_info">
+
+        <h2>New User Register(Post Method) </h2>
+        <p>Username: <input type="text" name="user1"></p>
+        <p>Password: <input type="password" name="pwd1"></p>
+
+        <span>Occupation:</span>
+
+        <select name="occ1">
+            <option>Student</option>
+            <option>Teacher</option>     
+            <option>Fire Fighter</option>     
+            <option>Police Officer</option>     
+            <option>Software Developer</option>     
+            <option>Human Resource</option>                
+        </select>
+        
+        <br><br>
+
+        <input type="submit"> <input type="reset">
+
+    </form>
+
+
+
+</body>
+
+</html>
