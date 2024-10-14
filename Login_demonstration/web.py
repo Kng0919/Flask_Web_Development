@@ -31,7 +31,7 @@ def login():
     else:
         user = request.form.get("user")
         password = request.form.get('pwd')
-        return "Welcome! User " + user
+        return "Welcome! User - " + user
     pass
 
 
