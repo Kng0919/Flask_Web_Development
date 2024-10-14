@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo</title>
+    <style>
+        input[type="text"]{
+            border: 5px solid red;
+        }
+
+        input[xx="test"]{
+            border: 5px solid blue;
+        }
+
+        .Child a{
+            color: blue;
+        }
+
+        .Child > a{
+            color:red;
+        }
+
+        .m1{
+            /*!important - Do not override*/
+            color:red !important;
+        }
+
+        .m2{
+            border: 5px solid red;
+            color: blue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+
+        <input type="text">
+        <input type="text" xx="test">
+        <input type="password">
+
+    </div>
+
+    <div class="Child">
+        <a>Google</a>
+        <div>
+            <a>Yahoo</a>
+        </div>
+        <a>Linkedin</a>
+    </div>
+
+    <div class="m1 m2">
+        <p>Greeting</p>
+    </div>
+
+</body>
+
+</html>

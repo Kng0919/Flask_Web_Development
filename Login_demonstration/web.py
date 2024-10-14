@@ -19,7 +19,7 @@ def user_info():
         occ = request.form.get("occ1")
         print(user,pwd,occ)
 
-    return render_template("user.html")
+    return render_template("user.html", user=user)
 @app.route("/register", methods=['GET'])
 def register():
     return render_template("register.html")
@@ -31,7 +31,7 @@ def login():
     else:
         user = request.form.get("user")
         password = request.form.get('pwd')
-        return "Welcome! User - " + user
+        return "Welcome! User " + user
     pass
 
 
